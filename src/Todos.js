@@ -35,7 +35,7 @@ const Todos = ({ todos, deleteTodo }) => {
     </MDBListGroup>
   );
 
-  return <div className="todos collection">{todoList}</div>;
+  return <div>{todoList}</div>;
 };
 
 export default Todos;

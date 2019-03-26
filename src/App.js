@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo";
-import { MDBRow, MDBCard, MDBCardTitle, MDBCardBody } from "mdbreact";
+import AppHeading from "./AppHeading";
+import { MDBRow, MDBCard, MDBCardBody } from "mdbreact";
 
 class App extends Component {
   state = {
@@ -32,7 +33,8 @@ class App extends Component {
       <div className="App">
         <MDBRow>
           <MDBCard className="card">
-            <MDBCardTitle className="cardTitle">To-Do List</MDBCardTitle>
+            {/* <MDBCardTitle className="cardTitle">To-Do List</MDBCardTitle> */}
+            <AppHeading />
             <MDBCardBody>
               <AddTodo addNewTodo={this.addNewTodo} />
               <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />

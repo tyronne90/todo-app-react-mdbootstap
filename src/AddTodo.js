@@ -14,7 +14,7 @@ export default class AddTodo extends Component {
 
   formSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+    //console.log(this.state);
     this.props.addNewTodo(this.state); // addNewTodo refer from App.js AddNewTodo function
     this.setState({
       content: ""
