@@ -1,0 +1,14 @@
+.d-flex div {
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: left;
+  margin-left: 10%;
+  width: 80%;
+}
+.listGroup {
+  width: 100%;
+}
+.badge {
+  cursor: pointer;
+}
