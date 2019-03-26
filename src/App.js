@@ -3,6 +3,7 @@ import "./App.css";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo";
 import AppHeading from "./AppHeading";
+import AppFooter from "./AppFooter";
 import { MDBRow, MDBCard, MDBCardBody } from "mdbreact";
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
             <MDBCardBody>
               <AddTodo addNewTodo={this.addNewTodo} />
               <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
+              <AppFooter />
             </MDBCardBody>
           </MDBCard>
         </MDBRow>
